@@ -1,7 +1,7 @@
 """Specialized tools for the autonomous agent to invoke during step execution."""
 
 from typing import Dict, Any, List, Optional
-from build.schemas import DocumentSection, TableData
+from schemas import DocumentSection, TableData
 
 
 def draft_section_tool(

@@ -16,11 +16,11 @@ import sys
 from docx import Document
 
 # Ensure project root is in sys.path
-sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+sys.path.insert(0, os.path.abspath(os.path.dirname(__file__)))
 
-from build.llm import LLMClient
-from build.planner import Planner
-from build.executor import AgentExecutor
+from llm import LLMClient
+from planner import Planner
+from executor import AgentExecutor
 
 
 def test_standard_business_request():

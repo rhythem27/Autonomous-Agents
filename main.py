@@ -10,10 +10,10 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 
-from build.schemas import AgentRequest, AgentResponse
-from build.llm import LLMClient
-from build.planner import Planner
-from build.executor import AgentExecutor
+from schemas import AgentRequest, AgentResponse
+from llm import LLMClient
+from planner import Planner
+from executor import AgentExecutor
 
 # Load environment configuration
 load_dotenv()
@@ -137,5 +137,5 @@ if __name__ == "__main__":
     import uvicorn
     host = os.getenv("HOST", "127.0.0.1")
     port = int(os.getenv("PORT", "8000"))
-    uvicorn.run("build.main:app", host=host, port=port, reload=True)
+    uvicorn.run("main:app", host=host, port=port, reload=True)
 

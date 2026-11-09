@@ -5,8 +5,8 @@ and generates a structured execution plan (TODO list).
 """
 
 from typing import Dict, Any
-from build.schemas import Plan, Task, TaskStatus
-from build.llm import LLMClient
+from schemas import Plan, Task, TaskStatus
+from llm import LLMClient
 
 
 PLANNER_SYSTEM_PROMPT = """You are an Autonomous AI Planning Agent specialized in enterprise document architecture.

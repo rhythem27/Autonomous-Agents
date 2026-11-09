@@ -8,7 +8,7 @@ import os
 import time
 import uuid
 from typing import List, Dict, Any, Tuple
-from build.schemas import (
+from schemas import (
     Plan,
     Task,
     TaskStatus,
@@ -17,13 +17,13 @@ from build.schemas import (
     AgentResponse,
     ReflectionResult
 )
-from build.llm import LLMClient
-from build.reflector import Reflector
-from build.doc_generator import build_docx_document
+from llm import LLMClient
+from reflector import Reflector
+from doc_generator import build_docx_document
 
 
 class AgentExecutor:
-    def __init__(self, llm_client: LLMClient, storage_dir: str = "build/storage"):
+    def __init__(self, llm_client: LLMClient, storage_dir: str = "storage"):
         self.llm = llm_client
         self.reflector = Reflector(llm_client)
         self.storage_dir = storage_dir

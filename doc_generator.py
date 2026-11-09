@@ -12,7 +12,7 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.enum.table import WD_TABLE_ALIGNMENT
 from docx.oxml import parse_xml, OxmlElement
 from docx.oxml.ns import nsdecls, qn
-from build.schemas import DocumentSection, TableData, Task, ReflectionResult
+from schemas import DocumentSection, TableData, Task, ReflectionResult
 
 
 # Corporate Palette

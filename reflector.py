@@ -6,8 +6,8 @@ automatic refinements prior to document compilation.
 """
 
 from typing import List, Dict, Any, Tuple
-from build.schemas import Plan, DocumentSection, ReflectionResult, TableData
-from build.llm import LLMClient
+from schemas import Plan, DocumentSection, ReflectionResult, TableData
+from llm import LLMClient
 
 
 REFLECTOR_SYSTEM_PROMPT = """You are an Autonomous AI Quality & Reflection Critic.

@@ -8,7 +8,8 @@ __pycache__/
 
 # Distribution / packaging
 .Python
-build/
+# build/ (uncommented: custom source directory in this project)
+build/storage/*.docx
 develop-eggs/
 dist/
 downloads/
